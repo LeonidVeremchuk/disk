@@ -1,94 +1,111 @@
 {
     "asset": {
-        "version": "2.0",
-        "generator": "Open Asset Import Library (assimp v5.0.5eb040c7)"
+        "generator": "FBX2glTF v0.9.7",
+        "version": "2.0"
     },
-    "accessors": [
-        {
-            "bufferView": 0,
-            "byteOffset": 0,
-            "componentType": 5126,
-            "count": 2082,
-            "type": "VEC3",
-            "max": [
-                58.617713928222659,
-                34.14802169799805,
-                53.78313446044922
-            ],
-            "min": [
-                -51.22203063964844,
-                -34.14802169799805,
-                0.0
-            ]
-        },
-        {
-            "bufferView": 1,
-            "byteOffset": 0,
-            "componentType": 5126,
-            "count": 2082,
-            "type": "VEC3",
-            "max": [
-                0.9994003176689148,
-                0.9999988079071045,
-                1.0
-            ],
-            "min": [
-                -0.9995757341384888,
-                -0.9999988079071045,
-                -1.0
-            ]
-        },
-        {
-            "bufferView": 2,
-            "byteOffset": 0,
-            "componentType": 5125,
-            "count": 12096,
-            "type": "SCALAR",
-            "max": [
-                2081
-            ],
-            "min": [
-                0
-            ]
-        }
-    ],
+    "scene": 0,
     "buffers": [
         {
-            "byteLength": 98352,
-            "uri": "result.bin"
+            "byteLength": 100832,
+            "uri": "buffer.bin"
         }
     ],
     "bufferViews": [
         {
             "buffer": 0,
+            "byteLength": 24192,
             "byteOffset": 0,
-            "byteLength": 24984,
-            "target": 34962
-        },
-        {
-            "buffer": 0,
-            "byteOffset": 24984,
-            "byteLength": 24984,
-            "target": 34962
-        },
-        {
-            "buffer": 0,
-            "byteOffset": 49968,
-            "byteLength": 48384,
             "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 28740,
+            "byteOffset": 24192,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 28740,
+            "byteOffset": 52932,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19160,
+            "byteOffset": 81672,
+            "target": 34962
         }
+    ],
+    "scenes": [
+        {
+            "name": "Root Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "componentType": 5123,
+            "type": "SCALAR",
+            "count": 12096,
+            "bufferView": 0,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 2395,
+            "bufferView": 1,
+            "byteOffset": 0,
+            "min": [
+                -0.512220323085785,
+                -0.341480195522308,
+                0.0
+            ],
+            "max": [
+                0.586177110671997,
+                0.341480195522308,
+                0.53783130645752
+            ]
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 2395,
+            "bufferView": 2,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC2",
+            "count": 2395,
+            "bufferView": 3,
+            "byteOffset": 0
+        }
+    ],
+    "samplers": [
+        {}
     ],
     "materials": [
         {
             "name": "DefaultMaterial",
+            "alphaMode": "OPAQUE",
+            "extras": {
+                "fromFBX": {
+                    "shadingModel": "Lambert",
+                    "isTruePBR": false
+                }
+            },
             "pbrMetallicRoughness": {
                 "baseColorFactor": [
-                    0.800000011920929,
-                    0.800000011920929,
-                    0.800000011920929,
+                    0.5,
+                    0.5,
+                    0.5,
                     1.0
                 ],
-                "metallicFactor": 0.0
+                "metallicFactor": 0.200000002980232,
+                "roughnessFactor": 0.800000011920929
             }
         }
     ],
@@ -97,13 +114,14 @@
             "name": "Teapot001",
             "primitives": [
                 {
-                    "mode": 4,
                     "material": 0,
-                    "indices": 2,
+                    "mode": 4,
                     "attributes": {
-                        "POSITION": 0,
-                        "NORMAL": 1
-                    }
+                        "NORMAL": 2,
+                        "POSITION": 1,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 0
                 }
             ]
         }
@@ -111,93 +129,45 @@
     "nodes": [
         {
             "name": "RootNode",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
             "children": [
                 1
             ]
         },
         {
-            "name": "Teapot001_$AssimpFbx$_Translation",
-            "matrix": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.07366486638784409,
-                0.0,
-                -2.2260429859161379,
-                1.0
-            ],
-            "children": [
-                2
-            ]
-        },
-        {
-            "name": "Teapot001_$AssimpFbx$_PreRotation",
-            "matrix": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                -4.371138828673793e-8,
-                -1.0,
-                0.0,
-                0.0,
-                1.0,
-                -4.371138828673793e-8,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "children": [
-                3
-            ]
-        },
-        {
-            "name": "Teapot001_$AssimpFbx$_Rotation",
-            "matrix": [
-                -0.9499325752258301,
-                -0.31245502829551699,
-                0.0,
-                0.0,
-                0.31245502829551699,
-                -0.9499325752258301,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "children": [
-                4
-            ]
-        },
-        {
             "name": "Teapot001",
+            "translation": [
+                0.00187108747195452,
+                0.0,
+                -0.0565414875745773
+            ],
+            "rotation": [
+                0.111878782510757,
+                0.698199927806854,
+                0.698199927806854,
+                -0.111878782510757
+            ],
+            "scale": [
+                2.53999996185303,
+                2.53999996185303,
+                2.53999996185303
+            ],
             "mesh": 0
         }
-    ],
-    "scenes": [
-        {
-            "nodes": [
-                0
-            ]
-        }
-    ],
-    "scene": 0
+    ]
 }
